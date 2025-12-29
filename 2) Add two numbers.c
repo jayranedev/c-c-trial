@@ -1,7 +1,7 @@
 #include<stdio.h>
 
 int add(int a, int b){
-    return a+b; // we use directly return because this will not use a stack slot and cause less memory usage
+    return a + b; // avoids extra local variable and enables better compiler optimization
 }
 
 int main(){
